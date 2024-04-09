@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div>
+      <h3 style="color:maroon">Leave options blank for their default P&W
+        values</h3>
+      <label for="DefaultTankCount">Default Tank Count in Attacks for Offensive
+        Wars (leave blank for default)</label>
+      <input type="number" id="DefaultTankCount" name="DefaultTankCount" />
+      <br>
+      <br>
+      <label for="UseMunitions">Use Munitions By Default</label>
+      <input type="checkbox" id="UseMunitions" checked name="UseMunitions" />
+      <br>
+      <br>
+      <label for="DefaultWarReason">Default War Reason</label>
+      <input type="text" id="DefaultWarReason" name="DefaultWarReason" />
+      <br>
+      <label for="DefaultWarType">Default War Type</label>
+      <select name="DefaultWarType" id="DefaultWarType">
+        <option value="none">Default</option>
+        <option value="ord">Ordinary</option>
+        <option value="att">Attrition</option>
+        <option value="raid">Raid</option>
+      </select>
+      <br>
+      <br>
+      <button id="SaveSettings">Save</button>
+      <h2 id="SavedMessage" style="color:green; display:none;">Saved
+        Successfully!</h2>
+      <br>
+      <br>
+      <a href="mailto:dave@developmentsbydavid.com">Contact Me (email)</a>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
